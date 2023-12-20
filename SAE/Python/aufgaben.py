@@ -185,7 +185,7 @@ def aufgabe11():
     print("Eigenschaften von", ", ".join(ergebnis))
 
 def aufgabe12():
-    #Aufgabe 12: While-Schleife bis 100
+    #Aufgabe 12: While-Schleife bis 100 (ungerade Zahlen)
     print("\nAufgabe 12")
 
     i = 0
@@ -195,4 +195,137 @@ def aufgabe12():
         if i % 2 == 1:
             print(i)
 
-aufgabe12()
+def aufgabe13():
+    #Aufgabe 13: Summe aller Zahlen zwischen 0 und 100
+    print("\nAufgabe 13")
+
+    i = 0
+    ergebnis = 0
+
+    while i <= 100:
+        #ergebnis = (i * ( i + 1)) / 2
+        ergebnis += i
+        i += 1
+    print(ergebnis)
+
+def aufgabe14():
+    #Aufgabe 14: Passwort-Prüfprogramm
+    print("\nAufgabe 14")
+
+    passwort = input("Passwort eingeben: ")
+    while passwort != "Adi":
+        passwort = input("Erneut versuchen: ")
+    print("Login erfolgreich!")
+
+def aufgabe15():
+    #Aufgabe 15: Kontorrechner inkl. Zinsen bis 10.000€
+    print("\nAufgabe 15")
+
+    geldsumme = 0
+    jahr = 0
+
+    while geldsumme <= 10000:
+        geldsumme += 400
+        geldsumme += geldsumme * 0.03
+        jahr += 1
+    print(jahr, "Jahre")
+
+def aufgabe16():
+    #Aufgabe 16:  Ermittle die Quersumme einer gegebenen Zahl mit Hilfe einer while-Schleife.
+    # Tipps:
+    # Beginne von hinten.
+    # Die letzte Ziffer bekommst du mit zahl % 10
+    # Die letzte Ziffer eliminierst du mit zahl // 10
+
+    zahl = 111111
+    quersumme = 0
+
+    while zahl > 0:
+        letzte_ziffer = zahl % 10
+        quersumme += letzte_ziffer
+        zahl //= 10
+
+    print(quersumme)
+
+def aufgabe17():
+    #Aufgabe 17: Vertausche zwei Variablen
+
+    a = 1
+    b = 2
+
+    tmp = a
+    a = b
+    b = tmp
+    # Nur in Python:
+    # a, b = b, a
+
+    print(a, b)
+
+def aufgabe18():
+    #Aufgabe 18: Arrays
+    '''Mit wort[0] bekommen wir das 1. Zeichen, usw.
+    #Mit len(wort) bekommen wir die Länge
+    #Mit wort[len(wort) - 1] bekommen wir das letzte Zeichen
+    '''
+
+    wort = "Jeske"
+    print(wort[len(wort) - 1])
+
+def aufgabe19():
+    #Aufgabe 19: Durchlaufen eines Wortes mithilfe einer while-Schleife und umgekehrte Ausgabe
+    wort = "Nase"
+    wort_umgekehrt = list()
+    wort_normal = list()
+    
+    i = 0
+
+    while i <= len(wort) - 1:
+        wort_normal.append(wort[i])
+        i += 1
+    
+    
+    i = len(wort) - 1
+
+    while i >= 0:
+        wort_umgekehrt.append(wort[i])
+        i -= 1
+    
+    print("".join(wort_normal))
+    print("".join(wort_umgekehrt))
+
+def aufgabe20():
+    #Aufgabe 20: Durchlaufen eines Wortes mithilfe einer while-Schleife und umgekehrte Ausgabe
+    wort = "Nase"
+    wort_umgekehrt = list()
+    wort_normal = list()
+    
+    i = 0
+
+    while i <= len(wort) - 1:
+        print(wort[i], end="")
+        i += 1
+    
+    print("")
+    
+    i = len(wort) - 1
+
+    while i >= 0:
+        print(wort[i], end="")
+        i -= 1
+
+    print("")
+
+def aufgabe21():
+    #Aufgabe 21: Zeichen in Wort suchen
+    wort = "Nase"
+    ges_zeichen = "a"
+
+    i = 0
+
+    while i < len(wort) and ges_zeichen != wort[i]:
+        i += 1
+    
+    print(i < len(wort))
+    #print(wort[i] == ges_zeichen) Wenn nicht gefunden Index out-of-range
+
+aufgabe21()
