@@ -263,9 +263,10 @@ def aufgabe17():
 
 def aufgabe18():
     #Aufgabe 18: Arrays
-    '''Mit wort[0] bekommen wir das 1. Zeichen, usw.
-    #Mit len(wort) bekommen wir die Länge
-    #Mit wort[len(wort) - 1] bekommen wir das letzte Zeichen
+    '''
+    Mit wort[0] bekommen wir das 1. Zeichen, usw.
+    Mit len(wort) bekommen wir die Länge
+    Mit wort[len(wort) - 1] bekommen wir das letzte Zeichen
     '''
 
     wort = "Jeske"
@@ -328,4 +329,59 @@ def aufgabe21():
     print(i < len(wort))
     #print(wort[i] == ges_zeichen) Wenn nicht gefunden Index out-of-range
 
-aufgabe21()
+def aufgabe22():
+    #Aufgabe 22: Gib alle Zeichen eines Strings einzeln aus. Nutze dazu eine while-Schleife. Hinweise mit der Voraussetzung ```wort = "hallo"```: ```wort[0]``` liefert das erste Zeichen eines Strings, ```wort[1]``` das zweite Zeichen usw. Die Länge des Strings liefert ```len(wort)```. Das letzte Zeichen bekommst du zum Beispiel mit ```wort[len(wort)-1]```.
+    i = 0
+    wort = "blubber"
+    while i < len(wort):
+        print(wort[i])
+        i += 1
+
+def aufgabe23():
+    #Aufgabe 23: Bilde die Quersumme einer ganzen Zahl, indem du sie zuerst zu einem String konvertierst und diesen anschließend mit einer while-Schleife durchläufst. Hinweis: Damit du die einzelnen Ziffern addieren kannst, musst du sie wieder in eine Ganzzahl konvertieren.
+    zahl = str(111)
+    i = 0
+    quersumme = 0
+    while i < len(zahl):
+        quersumme = quersumme + int(zahl[i])
+        i = i + 1
+    print(quersumme)
+
+def aufgabe24():
+    #Aufgabe 24: Wenn ein String ein gesuchtes Zeichen enthält, gibt das Programm ```True``` aus. Sonst ```False```.
+    gesucht = "a"
+    wort = "aa"
+    i = 0
+    while i < len(wort) and wort[i] != gesucht:
+        i = i + 1
+    print(i < len(wort))
+
+def aufgabe25():
+    #Aufgabe 25: Ermittle die höchste Ziffer in einem String, der nur aus Ziffern besteht. Zum Beispiel "1337", "1231235123".
+    zahl = "4574875712435"
+    i = 0
+    ziffer = 0
+    while i < len(zahl):
+        if ziffer < int(zahl[i]):
+            ziffer = int(zahl[i])
+        i += 1
+    print(ziffer)
+
+def aufgabe26():
+    #Aufgabe 26:
+    '''
+    Wenn ein String ein Palindrom ist, gibt das Programm ```True``` aus. Sonst ```False```.
+    Löse das Problem mit einer while-Schleife.
+    Ein Palindrom klingt gleich, egal ob es vorwärts oder rückwärts gelesen wird.
+    Beispiele: ehe, anna, kajak, rentner, reliefpfeiler. Bonus: Erweitere dein Programm so, dass es auch Satzpalindrome erkennen kann.
+    Beispiele für Satzpalindrome: "anna hetzte hanna", "dreh mal am herd", "ein eis esse sie nie".
+    Tipp: ```wort.replace('ae', 'ä')``` ersetzt alle 'ae' in Wort durch 'ä'.
+    '''
+    wort = "dreh mal am herd"
+    wort = wort.replace(' ', '')
+    i = 0
+    while i < (len(wort) // 2) and wort[i] == wort[(len(wort) - 1) - i]:
+            i += 1
+    print(wort[(len(wort) - 1) - i])
+
+aufgabe26()
