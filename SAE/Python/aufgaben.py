@@ -358,9 +358,9 @@ def aufgabe24():
 
 def aufgabe25():
     #Aufgabe 25: Ermittle die höchste Ziffer in einem String, der nur aus Ziffern besteht. Zum Beispiel "1337", "1231235123".
-    zahl = "4574875712435"
-    i = 0
-    ziffer = 0
+    zahl = "45748757124359"
+    ziffer = int(zahl[0])
+    i = 1
     while i < len(zahl):
         if ziffer < int(zahl[i]):
             ziffer = int(zahl[i])
@@ -378,10 +378,24 @@ def aufgabe26():
     Tipp: ```wort.replace('ae', 'ä')``` ersetzt alle 'ae' in Wort durch 'ä'.
     '''
     wort = "dreh mal am herd"
-    wort = wort.replace(' ', '')
+    wort = wort.lower().replace(' ', '')
     i = 0
     while i < (len(wort) // 2) and wort[i] == wort[(len(wort) - 1) - i]:
             i += 1
-    print(wort[(len(wort) - 1) - i])
+    print(wort[i] == wort[(len(wort) - 1) - i])
 
-aufgabe26()
+def aufgabe27():
+    #Aufgabe 27:
+    '''
+    Spezialaufgabe: Kleines Einmaleins ausgeben
+    '''
+    reihe = 0
+    operand = 0
+
+    while reihe <= 10:
+        while operand <= 10:
+            print(f"{reihe} x {operand} = {reihe * operand}")
+            operand += 1
+        reihe += 1
+        operand = 0
+aufgabe25()
