@@ -1,0 +1,5 @@
+Eingabe
+Ausgabe
+Typumwandlung
+Rechnen (+, -, *, /, **)
+if, elif, else

@@ -1,0 +1,18 @@
+1. Schreibe ein Programm, das einen Namen einliest und anschließend
+wieder ausgibt.
+
+2. Schreibe ein Programm, das einen Namen einliest und anschließend
+„Hallo, “ gefolgt vom
+Namen mit nur einem print() ausgibt.
+
+3. Schreibe ein Programm, das zwei Zahlen einliest und deren Summe
+ausgibt. Untersuche wie das Programm auf Fehleingaben reagiert.
+
+4. Schreibe ein Programm, das zwei Zahlen b und e einliest und
+anschließend das Ergebnis von b hoch e mit zwei Nachkommastellen ausgibt.
+
+5. Schreibe ein Programm, das drei Zahlen einliest und diese
+anschließend wie ein Datum mit
+
+führenden Nullen ausgibt, z. B. nach der Eingabe von „21“, „9“ und
+„2019“ wird „12.09.2019“ ausgegeben.
