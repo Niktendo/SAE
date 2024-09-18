@@ -1,0 +1,81 @@
+# Schreibe jeweils ein Programm.
+
+# Aufgabe 1 Nutze die Listenmethoden aus help(list)
+
+# Erstelle eine Liste namens obst, die die Elemente "Apfel", "Banane", "Pflaume" enthält.
+
+# Füge die Elemente der Liste beeren = ["Stachelbeere", "Himbeere", "Heidelbeere"] ans Ende von obst.
+
+# Füge am Ende der Liste das Element "Mango" hinzu.
+
+# Füge zwischen Banane und Pflaume das Element "Kirsche" ein.
+
+# Ändere das zweite Element von "Banane" in "Birne".
+
+# Entferne das erste Element aus der Liste.
+
+# Nutze pop() um das letzte Element zu entfernen und auszugeben.
+
+# Gib den Index des Elements "Pflaume" auf der Konsole aus.
+
+# Gib das größte Element auf der Konsole aus.
+
+# Gib den Index des größten Elements auf der Konsole aus.
+
+# Wie viele Stellen ist das größte Element vom Kleinsten entfernt? Gib hierzu die Differenz der
+# Indizes des größten und des kleinsten Elements als positive Zahl aus.
+
+# Gib die Liste auf der Konsole aus.
+
+# Sortiere die Liste alphabetisch aufsteigend.
+
+# Gib die einzelnen Elemente der Liste zeiilenweise auf der Konsole aus (for-each-Schleife)
+
+
+# Aufgabe 2 Slicing
+
+# Erstelle eine Liste zahlen die die Zahlen von 1 bis 100 enthält. Nutze hierzu for i in range()
+# und füge jedes einzelne Element hinten an deine Liste.
+
+# Gib die Anzahl der Elemente aus.
+
+# Nutze die Slicing-Notation liste[start:stop:step] für die folgenden Aufgaben
+# https://stackoverflow.com/questions/509211/how-slicing-in-python-works
+
+# Gib die gesamte Liste aus.
+
+# Gib die Liste bis zum vorletzten Element aus.
+
+# Gib die Liste bis zum fünften Element von Hinten aus.
+
+# Gib alle Elemente zwischen den Indizes 25 und 35 (inklusive) aus.
+
+# Gib jedes zweite Element aus.
+
+# Gib jedes fünfte Element bis zum Index 80 (exklusive) aus.
+
+# Gib die Liste rückwärts aus.
+
+
+# Aufgabe 3 Listen durchlaufen
+
+# Erstelle die Liste messwerte = [22.86, 20.39, 23.76, 21.34, 24.32]
+
+# Durchlaufe die Liste ein Mal und ermittle dabei minimum, maximum und summe.
+# Nutze dabei NICHT die Funktionen min(), max(), sum().
+# Gib Minimum, Maximum, Summe und Durchschnitt aus.
+
+# Aufgabe 4 Listen und Strings
+
+# Zerschneide den String "Schneider;Fischer;Seemann;Schmied;Müller" in eine Liste berufe.
+
+# Sortiere die Liste berufe.
+
+# Füge die Liste zu einem String mit dem Trennzeichen | zusammen.
+
+
+# Aufgabe 4 Verschachtelte Listen
+
+# Gegeben ist die verschachtelte Liste matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]].
+# Schreibe eine Funktion, die die Summe aller Zahlen in der Matrix berechnet. Hierzu bekommt sie
+# die Matrix als Parameter und liefert die Summe zurück.
