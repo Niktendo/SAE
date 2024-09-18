@@ -99,4 +99,22 @@ def aufgabe4():
     # Füge die Liste zu einem String mit dem Trennzeichen | zusammen.
     ergebnis = "|".join(berufe)
     print(ergebnis)
-aufgabe4()
+
+# Aufgabe 5: Verschachtelte Listen
+def aufgabe5():
+    # Gegeben ist die verschachtelte Liste matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]].
+    # Schreibe eine Funktion, die die Summe aller Zahlen in der Matrix berechnet. Hierzu bekommt sie
+    # die Matrix als Parameter und liefert die Summe zurück.
+    matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+    summe = 0
+
+    for liste in matrix:
+        for element in liste:
+            summe = summe + element
+
+    #for liste in matrix:
+    #    summe = summe + sum(liste)
+
+    print(summe)
+
+aufgabe5()
