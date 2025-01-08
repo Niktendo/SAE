@@ -23,7 +23,7 @@ def personnelNumberFirst(daten, index_persnr):
 
     return daten_neu
 
-print(personnelNumberFirst(wirth, 2))
+print(personnelNumberFirst(schneider, 2))
 
 '''
 index = 2

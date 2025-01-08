@@ -115,6 +115,6 @@ def aufgabe5():
     #for liste in matrix:
     #    summe = summe + sum(liste)
 
-    print(summe)
+    return summe
 
-aufgabe5()
+print(aufgabe5())

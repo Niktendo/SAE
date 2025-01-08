@@ -1,0 +1,11 @@
+Mitarbeiterliste: Anna Müller, Max Schmidt, Julia Bauer, Tom Fischer, Laura Weber, Felix Wagner, Sophie Klein, Jan Richter, Nina Schulz, Lisa Neumann
+Durchschnittsgehalt IT: 5100.0
+Erhöhtes Teilzeitgehalt:
+30281;Julia Bauer;Marketing;3300.0;120;Ja
+40275;Tom Fischer;IT;4800;160;Nein
+50432;Laura Weber;Vertrieb;3850.0;140;Ja
+60194;Felix Wagner;Buchhaltung;4400.0;150;Ja
+70283;Sophie Klein;Marketing;2970.0;110;Ja
+80347;Jan Richter;Buchhaltung;4500;160;Nein
+90214;Nina Schulz;IT;5300;175;Nein
+10031;Lisa Neumann;Vertrieb;3520.0;130;Ja
